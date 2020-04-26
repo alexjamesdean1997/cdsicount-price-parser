@@ -12,4 +12,3 @@ def parse_price(sku):
     getprice = re.findall(r'"price":(.*?),', str(respData))
     price = float(getprice[0])
     print(price)
-
