@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cdiscount price parser</title>
+    <style>
+        label, input, button {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cdiscount price parser</h1>
+    <h2>A simple Python method to get a Cdiscount product price</h2>
+    <form role="form" action="" method="POST">
+        <label for="sku">Product identifier</label>
+        <input type="text" id="sku" name="sku" size="50">
+        <button type="submit">submit</button>
+    </form>
+    <p>price = <span>{{price}}</span>€</p>
+</body>
+</html>
