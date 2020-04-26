@@ -17,7 +17,7 @@ python
 
 3. Import the parse_price method from the price_parser module
 ```
->>> from price_parser import parse_price
+>>> from cdiscount.price_parser import parse_price
 ```
 
 4. Assign your product identifier value to a variable
@@ -25,12 +25,12 @@ python
 >>> sku = "<your-product-id>"
 ```
 
-5. Call the parse_price method with your variable as attribut
+5. Call the parse_price method with your variable
 ```
 >>> parse_price(sku)
 ```
 
-This will print out the price of your product
+This will return the price of your product
 
 
 ## Author
