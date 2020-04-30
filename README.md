@@ -33,6 +33,24 @@ python
 This will return the price of your product
 
 
+## Unit tests
+
+To start the unit tests :
+```
+cd <path>/cdiscount-price-parser
+python -m unittest unit_tests/test_price_parser.py
+```
+
+
+## Price parser web page
+
+To launch the web page version of the price parser :
+```
+cd <path>/cdiscount-price-parser/web_page
+export FLASK_APP=web_page.py
+flask run
+```
+
 ## Author
 
 Alexandre Dean
