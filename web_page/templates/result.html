@@ -1,25 +1,29 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Cdiscount price parser</title>
-    <style>
-        label, input, button {
-            display: block;
-        }
-    </style>
 </head>
 <body>
-    <h1>Cdiscount price parser</h1>
-    <h2>A simple Python method to get a Cdiscount product price</h2>
-    <form role="form" action="" method="POST">
-        <label for="sku">Product identifier</label>
-        <input type="text" id="sku" name="sku" size="50">
-        <button type="submit">submit</button>
-    </form>
-    <p>price = <span>{{price}}</span>€</p>
+    <main class="container pt-5">
+        <section class="row">
+            <div class="col-12">
+                <h1 class="mb-4">Cdiscount price parser</h1>
+                <p class="mb-4">A simple Python web page to get a Cdiscount product price, powered by flask</p>
+                <form class="mb-4" role="form" action="" method="POST">
+                    <div class="form-group">
+                        <label for="sku">Product identifier</label>
+                        <input class="form-control" type="text" id="sku" name="sku" size="50">
+                    </div>
+                    <button class="btn btn-primary" type="submit">submit</button>
+                </form>
+                <div class="text-white bg-dark p-4 rounded">price = {{ price }}€</div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
