@@ -1,7 +1,9 @@
 import unittest
 from cdiscount.price_parser import parse_price
 
+
 class TestParsePrice(unittest.TestCase):
+
     def test_parse_price(self):
         # Test when sku is a string, expect float
         self.assertEqual(type(parse_price("del5397184246030")), float)
